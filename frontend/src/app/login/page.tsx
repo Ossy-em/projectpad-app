@@ -55,7 +55,7 @@ export default function LoginPage() {
 
 
                 <div className="text-sm text-center text-muted-foreground">
-                    Don't have an account? <a href="#" className="underline">Sign up</a>
+                    Don&apos;t have an account? <a href="#" className="underline">Sign up</a>
                 </div>
             </div>
         </div>
