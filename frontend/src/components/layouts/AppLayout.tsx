@@ -125,7 +125,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         </div>
       </aside>
 
-      {/* Main Content */}
+  
       <main className="flex-1 bg-gray-50 overflow-y-auto">
         <div className="p-6">
           {children}

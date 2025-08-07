@@ -2,9 +2,9 @@
 import StatCounter from "@/components/landingPage/StatCounter";
 import Navbar from "@/components/landingPage/Navbar";
 import Footer from "@/components/landingPage/Footer";
-import  FeatureCard  from "@/components/landingPage/FeatureCard";
+import FeatureCard from "@/components/landingPage/FeatureCard";
 import React, { useState, useEffect } from 'react';
-import {  FaArrowRight, FaRocket, FaStar } from 'react-icons/fa';
+import { FaArrowRight, FaRocket, FaStar } from 'react-icons/fa';
 
 export default function LandingPage() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,27 +19,26 @@ export default function LandingPage() {
 
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className={`text-center transform transition-all duration-1000 ${
-            isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-          }`}>
-         
+          <div className={`text-center transform transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+            }`}>
+
             <div className="inline-flex items-center space-x-2 bg-slate-100 text-slate-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <FaRocket className="text-xs" />
               <span>Trusted by 10,000+ researchers worldwide</span>
             </div>
 
-  
+
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-slate-900 max-w-4xl mx-auto">
               Streamline Your Research Workflow
             </h1>
 
-         
+
             <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              From literature reviews to reference management, organize everything in one professional platform. 
+              From literature reviews to reference management, organize everything in one professional platform.
               Built for researchers who value efficiency and collaboration.
             </p>
 
-         
+
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
               <button className="bg-slate-800 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-slate-900 transition-all duration-200 flex items-center">
                 Get Started Free
@@ -51,7 +50,7 @@ export default function LandingPage() {
               </button>
             </div>
 
-         
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               <StatCounter end={50000} label="Papers Analyzed" suffix="+" />
               <StatCounter end={99} label="Accuracy Rate" suffix="%" />
@@ -61,7 +60,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-    
+
       <section id="features" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -96,13 +95,15 @@ export default function LandingPage() {
         </div>
       </section>
 
-   
+
       <section className="py-20 bg-slate-800 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="flex justify-center mb-6">
-            {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="text-yellow-400 text-xl mx-1" />
-            ))}
+            <FaStar className="text-yellow-400 text-xl mx-1" />
+            <FaStar className="text-yellow-400 text-xl mx-1" />
+            <FaStar className="text-yellow-400 text-xl mx-1" />
+            <FaStar className="text-yellow-400 text-xl mx-1" />
+            <FaStar className="text-yellow-400 text-xl mx-1" />
           </div>
           <blockquote className="text-2xl md:text-3xl font-light mb-8 leading-relaxed">
             "ResearchFlow transformed how I approach my PhD research. What used to take weeks now takes days. The reference management alone has saved me countless hours."
@@ -114,7 +115,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-    
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-slate-900">
