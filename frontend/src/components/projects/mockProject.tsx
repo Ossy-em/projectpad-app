@@ -39,3 +39,59 @@ export const  mockProjects = [
     recentActivity: "Gathered 12 industry reports"
   }
 ];
+
+export const projectTypes = [
+  {
+    id: "1",
+    name: "Thesis",
+    description: "70+ page research project with literature review"
+  },
+  {
+    id: "2", 
+    name: "Capstone",
+    description: "Final project demonstrating skills and knowledge"
+  },
+  {
+    id: "3",
+    name: "Essay", 
+    description: "Short-form academic writing with citations"
+  },
+  {
+    id: "4",
+    name: "Market Research",
+    description: "Business/industry analysis and insights"
+  },
+  {
+    id: "5",
+    name: "Self Research", 
+    description: "Personal learning and exploration project"
+  },
+  {
+    id: "6",
+    name: "Other",
+    description: "Custom research project type"
+  }
+]; 
+
+export const challenges = [
+  {
+    id: "1",
+    name: "Just getting started",
+    description: "Need to define my topic and research direction"
+  },
+  {
+    id: "2",
+    name: "Have a topic, need sources", 
+    description: "Know what I'm researching but need to find materials"
+  },
+  {
+    id: "3",
+    name: "Have sources, need to organize",
+    description: "Collected materials but need to analyze and synthesize"
+  },
+  {
+    id: "4",
+    name: "Ready to write",
+    description: "Need structure, citations, and writing assistance"
+  }
+];

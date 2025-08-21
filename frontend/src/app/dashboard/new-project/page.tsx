@@ -5,63 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { projectTypes, challenges } from "@/components/projects/mockProject";
 import Link from "next/link";
-
-const projectTypes = [
-  {
-    id: "thesis",
-    name: "Thesis",
-    description: "70+ page research project with literature review"
-  },
-  {
-    id: "capstone", 
-    name: "Capstone",
-    description: "Final project demonstrating skills and knowledge"
-  },
-  {
-    id: "essay",
-    name: "Essay", 
-    description: "Short-form academic writing with citations"
-  },
-  {
-    id: "market-research",
-    name: "Market Research",
-    description: "Business/industry analysis and insights"
-  },
-  {
-    id: "self-research",
-    name: "Self Research", 
-    description: "Personal learning and exploration project"
-  },
-  {
-    id: "other",
-    name: "Other",
-    description: "Custom research project type"
-  }
-]; 
-
-const challenges = [
-  {
-    id: "getting-started",
-    name: "Just getting started",
-    description: "Need to define my topic and research direction"
-  },
-  {
-    id: "need-sources",
-    name: "Have a topic, need sources", 
-    description: "Know what I'm researching but need to find materials"
-  },
-  {
-    id: "need-organization",
-    name: "Have sources, need to organize",
-    description: "Collected materials but need to analyze and synthesize"
-  },
-  {
-    id: "ready-to-write",
-    name: "Ready to write",
-    description: "Need structure, citations, and writing assistance"
-  }
-];
 
 export default function NewProjectPage() {
   const router = useRouter();
