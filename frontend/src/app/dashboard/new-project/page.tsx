@@ -38,38 +38,28 @@ const projectTypes = [
     name: "Other",
     description: "Custom research project type"
   }
-];
+]; 
 
 const challenges = [
   {
-    id: "finding-topic",
-    name: "Finding a topic",
-    description: "Need help brainstorming or narrowing down research focus"
+    id: "getting-started",
+    name: "Just getting started",
+    description: "Need to define my topic and research direction"
   },
   {
-    id: "organizing-sources",
-    name: "Organizing sources", 
-    description: "Managing papers, references, and research materials"
+    id: "need-sources",
+    name: "Have a topic, need sources", 
+    description: "Know what I'm researching but need to find materials"
   },
   {
-    id: "literature-review",
-    name: "Writing literature review",
-    description: "Synthesizing existing research and identifying gaps"
+    id: "need-organization",
+    name: "Have sources, need to organize",
+    description: "Collected materials but need to analyze and synthesize"
   },
   {
-    id: "managing-citations",
-    name: "Managing citations",
-    description: "Proper formatting and citation management"
-  },
-  {
-    id: "collaboration",
-    name: "Collaboration",
-    description: "Working with supervisors, peers, or team members"
-  },
-  {
-    id: "other-challenge",
-    name: "Other",
-    description: "Different challenge not listed above"
+    id: "ready-to-write",
+    name: "Ready to write",
+    description: "Need structure, citations, and writing assistance"
   }
 ];
 
@@ -87,7 +77,7 @@ export default function NewProjectPage() {
   const handleSubmit = async () => {
 
     const projectData = { 
-      id: `user_${Date.now()}`, // Simple unique ID for now
+      id: `user_${Date.now()}`, 
       title, 
       description, 
       type, 
@@ -176,7 +166,7 @@ export default function NewProjectPage() {
                 {projectTypes.map((projectType) => (
                   <button
                     key={projectType.id}
-                    className={`p-6 text-left border rounded-lg transition-all hover:border-blue-300 ${
+                    className={`p-6 text-left border rounded-lg transition-all cursor-pointer hover:border-blue-300 ${
                       type === projectType.id 
                         ? "border-blue-500 bg-blue-50" 
                         : "border-gray-200"
